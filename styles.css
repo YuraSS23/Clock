@@ -4,11 +4,15 @@ body {
     font-family: 'Russo One', sans-serif;
     font-size: 50px;
 }
+section {
+    padding: 30px;
 
+}
 
 .clockCase {
     display: flex;
     justify-content: center;
+    text-align: center
 }
 
 
