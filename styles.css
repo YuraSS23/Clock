@@ -6,22 +6,13 @@ body {
 }
 
 
-button {
-    background-color: rgb(54, 255, 47);
-    color: black;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-family: 'Russo One', sans-serif;
-}
-
-
 .clockCase {
     display: flex;
     justify-content: center;
 }
 
 
-.buttonCase {
+h2 {
     display: flex;
     justify-content: center;
 }
