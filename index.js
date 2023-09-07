@@ -11,15 +11,15 @@ function updateClock() {
     const minutes2 = Math.floor((before / (1000 * 60)) % 60);
     const seconds2 = Math.floor((before / 1000) % 60);
     if (end>30600000) {
-        header.textContent = "До начала рабочего дня";
+        now.getDay()===5 ? header.textContent = ("Сегодня пятница!!! До начала рабочего дня"): header.textContent = "До начала рабочего дня";
         clock.textContent = hours2 + ':' + minutes2 + ':' + seconds2;
     } else if (end>0) {
-        header.textContent = "До конца рабочего дня осталось"
+        now.getDay()===5 ? header.textContent = ("Сегодня пятница!!! До конца рабочего дня") : header.textContent = "До конца рабочего дня";
         clock.textContent = hours + ':' + minutes + ':' + seconds;
     }
     else {
         clock.textContent = "";
-        header.textContent = "Ура! Рабочий день закончился!"
+        now.getDay()===5 ? header.textContent = ("Сегодня пятница!!! Ура! Рабочий день закончился!") : header.textContent = "Ура! Рабочий день закончился!";
     }
 }
 setInterval(updateClock, 1000);
